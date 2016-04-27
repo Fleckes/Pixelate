@@ -30,3 +30,4 @@ void draw() {
   fill(r,g,b,100);
   ellipse(x,y,pointillize,pointillize);
 }
+//szia
