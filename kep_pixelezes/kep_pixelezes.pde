@@ -26,9 +26,10 @@ void draw() {
   float b = blue(img.pixels[loc]);
   noStroke();
   
-  // Draw an ellipse at that location with that color
+ 
   fill(r,g,b,100);
   ellipse(x,y,pointillize,pointillize);
+
 }
 //szia
 //sziaasdfasdfasdf
