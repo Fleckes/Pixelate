@@ -3,10 +3,10 @@ int pointillize = 16;
 
 void setup() {
   size(600,600);
-  img = loadImage("pic02.jpg");
+  img = loadImage("pic04.jpg");
   
    // size(1000,1000);
-  img.resize(1000,1000);
+  img.resize(600,600);
  // image(img,0,0);
   
   background(0);
@@ -18,6 +18,20 @@ void draw() {
   int x = int(random(img.width));
   int y = int(random(img.height));
   int loc = x + y*img.width;
+  frameRate(350);
+  
+  
+ 
+  if (mousePressed == true) {
+    background(0);
+ 
+  } else {
+     fill(0);
+  }
+  
+
+
+
   
   // Look up the RGB color in the source image
   loadPixels();
@@ -27,7 +41,7 @@ void draw() {
   noStroke();
   
  
-  fill(r,g,b,100);
+  fill(r,g,b,250);
   ellipse(x,y,pointillize,pointillize);
 
 }
